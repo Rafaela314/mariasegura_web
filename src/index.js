@@ -10,7 +10,7 @@ root.render(
     <div className="container">
       <div className="row">
         <div className="col">
-          <AppClass />
+         {/* <AppClass />*/}
           <App />
         </div>
       </div>
