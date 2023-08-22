@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import AppClass from './AppClass';
 import App from './App';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ErrorPage from './components/ErrorPage';
 import Home from './components/Home';
 import Resources from './components/Resources';
+import Appointments from './components/Appointments';
+import Login from './components/Login';
+import ManageResources from './components/ManageResources';
 
 
 const router = createBrowserRouter([
@@ -18,7 +20,19 @@ const router = createBrowserRouter([
       {
         path: "/resources",
         element: <Resources />,
-      }
+      },
+      {
+        path: "/appointments",
+        element: <Appointments />,
+      },
+      {
+        path: "/manage-resources",
+        element: <ManageResources />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
     ]
   }
 ])
@@ -30,7 +44,6 @@ root.render(
     <div className="container">
       <div className="row">
         <div className="col">
-         {/* <AppClass />*/}
           <RouterProvider router={router} />
         </div>
       </div>

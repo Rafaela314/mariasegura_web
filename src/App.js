@@ -21,7 +21,7 @@ function App() {
                             <Link to="/appointments"className="list-group-item list-group-item-action">Agendamentos</Link>
                             <Link to="/journal"className="list-group-item list-group-item-action">Relatos</Link>
                             <Link to="/admin/resource/0"className="list-group-item list-group-item-action">Adicionar Recurso</Link>
-                            <Link to="/admin"className="list-group-item list-group-item-action">Gerenciar Catálogo</Link>
+                            <Link to="/manage-resources"className="list-group-item list-group-item-action">Gerenciar Catálogo</Link>
                         </div>
                     </nav>
                 </div>
