@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ErrorPage from './components/ErrorPage';
 import Home from './components/Home';
 import Resources from './components/Resources';
+import Resource from './components/Resource';
 import Appointments from './components/Appointments';
 import Login from './components/Login';
 import ManageResources from './components/ManageResources';
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/resources",
         element: <Resources />,
+      },
+      {
+        path: "/resources/:id",
+        element: <Resource />,
       },
       {
         path: "/appointments",
